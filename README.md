@@ -21,8 +21,9 @@ This project is a RESTful web service for managing restaurant orders using JDBC 
 ### Installation and Running
 
 #### Cloning the Repository
-```git clone https://github.com/pp8a/restaurant-service.git 
-cd restaurant-service```
+`git clone https://github.com/pp8a/restaurant-service.git 
+cd restaurant-service`
+
 #### Database Setup
 1.  Create a PostgreSQL database and user:
 
