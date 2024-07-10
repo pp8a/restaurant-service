@@ -63,13 +63,6 @@ cd restaurant-service```
 *   PUT /order-details/{id} - Update existing order details
 *   DELETE /order-details/{id} - Delete order details by ID
 
-### Order Approvals
-*   GET /order-approvals - Retrieve all order approvals
-*   GET /order-approvals/{id} - Retrieve order approval by ID
-*   POST /order-approvals - Create a new order approval
-*   PUT /order-approvals/{id} - Update an existing order approval
-*   DELETE /order-approvals/{id} - Delete an order approval by ID
-
 ### Testing
 #### Running Unit Tests
 The project includes unit tests written using JUnit and Mockito. To run the tests, execute:
