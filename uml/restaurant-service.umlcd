@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_2uxLgDojEe-kG_4s-KvVRg">
+  <modelElement href="restaurant-service.uml#_3vS0YDojEe-kG_4s-KvVRg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_8Taf0DojEe-kG_4s-KvVRg" sourceAnchor="353.0,0.0" targetAnchor="144.0,104.0" superClass="_8Tk34DojEe-kG_4s-KvVRg" subClass="_8RNgYDojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_39wHIDojEe-kG_4s-KvVRg"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8Tbt8DojEe-kG_4s-KvVRg" source="_8Tk34DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_4C5F0TojEe-kG_4s-KvVRg"/>
+    <stereotypes xmi:id="_8Th0kTojEe-kG_4s-KvVRg" name="Reference">
+      <modelElement href="restaurant-service.uml#_4C6T8DojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8Tf_YDojEe-kG_4s-KvVRg" text=""/>
+    <sourceRole xmi:id="_8ThNgDojEe-kG_4s-KvVRg" aggregationKind="NONE" name="">
+      <modelElement href="restaurant-service.uml#_4C5F0jojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_8TjCsTojEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_8TjCsDojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8Th0kDojEe-kG_4s-KvVRg" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="restaurant-service.uml#_4BA2gDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_VseEUD66Ee-JWMeLREKicg" name="LegacyStyledElement">
+        <modelElement href="restaurant-service.uml#_4BA2gTojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_8TjCszojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8TjCsjojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_8UJfoDojEe-kG_4s-KvVRg" sourceAnchor="74.0,0.0" targetAnchor="120.0,155.0" dashed="true" superClass="_8UMi8DojEe-kG_4s-KvVRg" subClass="_8RNgYDojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_39scwDojEe-kG_4s-KvVRg"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Sokj8DokEe-kG_4s-KvVRg" sourceAnchor="305.0,203.0" targetAnchor="380.0,98.0" source="_SoqqkDokEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_4C4ewTojEe-kG_4s-KvVRg"/>
+    <bendpoints xmi:id="_YX1M0DokEe-kG_4s-KvVRg" sourceY="129" targetX="414"/>
+    <stereotypes xmi:id="_SolyEzokEe-kG_4s-KvVRg" name="Reference">
+      <modelElement href="restaurant-service.uml#_4C5F0DojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SolyEDokEe-kG_4s-KvVRg" text="">
+      <visualProperties xmi:id="_Sry3EDokEe-kG_4s-KvVRg" position="-243.22727272727275,2.5000000000001137"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SolyETokEe-kG_4s-KvVRg" aggregationKind="NONE" name="">
+      <modelElement href="restaurant-service.uml#_4C4ewjojEe-kG_4s-KvVRg"/>
+      <visualProperties xmi:id="_SryQADokEe-kG_4s-KvVRg" position="-15.5,39.5"/>
+      <visibility xmi:id="_SooOUTokEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_SooOUDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SolyEjokEe-kG_4s-KvVRg" aggregationKind="NONE" name="productDAO" navigable="true">
+      <modelElement href="restaurant-service.uml#_4A_oYTojEe-kG_4s-KvVRg"/>
+      <visualProperties xmi:id="_Sry3ETokEe-kG_4s-KvVRg" position="65.89999999999998,2.4999999999998863"/>
+      <visibility xmi:id="_Soo1YTokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_Soo1YDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoqDgDokEe-kG_4s-KvVRg" source="_SoqqkDokEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_4C33sTojEe-kG_4s-KvVRg"/>
+    <stereotypes xmi:id="_SoqDgTokEe-kG_4s-KvVRg" name="Reference">
+      <modelElement href="restaurant-service.uml#_4C4ewDojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoqDgjokEe-kG_4s-KvVRg" text=""/>
+    <sourceRole xmi:id="_SoqDgzokEe-kG_4s-KvVRg" aggregationKind="NONE" name="">
+      <modelElement href="restaurant-service.uml#_4C33sjojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_SoqDhDokEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_SoqDhTokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoqDhjokEe-kG_4s-KvVRg" aggregationKind="NONE" name="OBJECT_MAPPER" navigable="true">
+      <modelElement href="restaurant-service.uml#_4A_BUTojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_VstU4D66Ee-JWMeLREKicg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_4A_oYDojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqDhzokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqDiDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_gyWzoD66Ee-JWMeLREKicg" targetItem="_8RNgYDojEe-kG_4s-KvVRg" sourceItem="_gvZmQD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_kN4fUD66Ee-JWMeLREKicg" targetItem="_kQUIQD66Ee-JWMeLREKicg" sourceItem="_kNcacD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_kQfucD66Ee-JWMeLREKicg" targetItem="_kQ5XED66Ee-JWMeLREKicg" sourceItem="_kQegUD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_kT0vQD66Ee-JWMeLREKicg" targetItem="_8UMi8DojEe-kG_4s-KvVRg" sourceItem="_kTYDUD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oYwkUD66Ee-JWMeLREKicg" targetItem="_8Tk34DojEe-kG_4s-KvVRg" sourceItem="_oV9vAD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ohJrUD66Ee-JWMeLREKicg" targetItem="_8UMjAjojEe-kG_4s-KvVRg" sourceItem="_oejDQD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ohkiED66Ee-JWMeLREKicg" targetItem="_ohlwMD66Ee-JWMeLREKicg" sourceItem="_ohRnID66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ohnlYD66Ee-JWMeLREKicg" targetItem="_okc28D66Ee-JWMeLREKicg" sourceItem="_ohm-UD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_om68ID66Ee-JWMeLREKicg" targetItem="_8UVs4DojEe-kG_4s-KvVRg" sourceItem="_okesID66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_os198D66Ee-JWMeLREKicg" targetItem="_otNKUD66Ee-JWMeLREKicg" sourceItem="_oqbjID66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_owMM4D66Ee-JWMeLREKicg" targetItem="_owOCED66Ee-JWMeLREKicg" sourceItem="_owK-wD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ozOSwD66Ee-JWMeLREKicg" targetItem="_o1p7sD66Ee-JWMeLREKicg" sourceItem="_oyt8cD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_o8FT0D66Ee-JWMeLREKicg" targetItem="_8UMi9DojEe-kG_4s-KvVRg" sourceItem="_o734cD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_o_DIQD66Ee-JWMeLREKicg" targetItem="_8UVs4zojEe-kG_4s-KvVRg" sourceItem="_o-2T8D66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pHNlwD66Ee-JWMeLREKicg" targetItem="_SoqqwDokEe-kG_4s-KvVRg" sourceItem="_pExVwD66Ee-JWMeLREKicg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pNgbAD66Ee-JWMeLREKicg" targetItem="_SoqqzTokEe-kG_4s-KvVRg" sourceItem="_pKwpAD66Ee-JWMeLREKicg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_8UMi8DojEe-kG_4s-KvVRg" comments="_kTYDUD66Ee-JWMeLREKicg" targetConnectionVisual="_kT0vQD66Ee-JWMeLREKicg" name="Dao" subclassedBy="_8UJfoDojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_3zzg8DojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_8UMi8TojEe-kG_4s-KvVRg" position="166.0,22.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_8UMi8jojEe-kG_4s-KvVRg" name="Generics">
+      <modelElement href="restaurant-service.uml#_3z1WIDojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <visibility xmi:id="_8UMi8zojEe-kG_4s-KvVRg" label="+"/>
+    <operations xmi:id="_8UMi9DojEe-kG_4s-KvVRg" comments="_o734cD66Ee-JWMeLREKicg" targetConnectionVisual="_o8FT0D66Ee-JWMeLREKicg" name="getAll">
+      <modelElement href="restaurant-service.uml#_3z3LUDojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_8UMi9TojEe-kG_4s-KvVRg" label="~"/>
+      <cardinality xmi:id="_8UMi9jojEe-kG_4s-KvVRg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_8UMi9zojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_3z3yYDojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8UMi-DojEe-kG_4s-KvVRg" name="T">
+          <modelElement href="restaurant-service.uml#_4AG3kDojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8UMjAjojEe-kG_4s-KvVRg" comments="_oejDQD66Ee-JWMeLREKicg" targetConnectionVisual="_ohJrUD66Ee-JWMeLREKicg" name="save">
+      <modelElement href="restaurant-service.uml#_4ANlQDojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_8UMjAzojEe-kG_4s-KvVRg" label="~"/>
+      <cardinality xmi:id="_8UMjBDojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8UMjBTojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_4AOMUTojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8UMjBjojEe-kG_4s-KvVRg" name="T">
+          <modelElement href="restaurant-service.uml#_4AG3kDojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8UMjBzojEe-kG_4s-KvVRg" name="t">
+        <modelElement href="restaurant-service.uml#_4AOMUDojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_8UMjCDojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_8UMjCTojEe-kG_4s-KvVRg" name="T">
+          <modelElement href="restaurant-service.uml#_4AG3kDojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_kQUIQD66Ee-JWMeLREKicg" comments="_kNcacD66Ee-JWMeLREKicg" targetConnectionVisual="_kN4fUD66Ee-JWMeLREKicg" name="getById">
+      <modelElement href="restaurant-service.uml#_gLExMT66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_kQUIQT66Ee-JWMeLREKicg" name="Generics">
+        <modelElement href="restaurant-service.uml#_gLF_UD66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_kQUIQj66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_kQUIQz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_kQUIRD66Ee-JWMeLREKicg">
+        <modelElement href="restaurant-service.uml#_gLFYQD66Ee-JWMeLREKicg"/>
+        <type xmi:id="_kQUIRT66Ee-JWMeLREKicg" name="Optional">
+          <modelElement href="restaurant-service.uml#_38pT4TojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_kQUIRj66Ee-JWMeLREKicg" name="id">
+        <modelElement href="restaurant-service.uml#_gLExMj66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_kQUIRz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_kQUISD66Ee-JWMeLREKicg" name="I">
+          <modelElement href="restaurant-service.uml#_gLEKID66Ee-JWMeLREKicg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_kQ5XED66Ee-JWMeLREKicg" comments="_kQegUD66Ee-JWMeLREKicg" targetConnectionVisual="_kQfucD66Ee-JWMeLREKicg" name="delete">
+      <modelElement href="restaurant-service.uml#_gLGmYD66Ee-JWMeLREKicg"/>
+      <visibility xmi:id="_kQ5XET66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_kQ5XEj66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_kQ5XEz66Ee-JWMeLREKicg" name="id">
+        <modelElement href="restaurant-service.uml#_gLHNcD66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_kQ5XFD66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_kQ5XFT66Ee-JWMeLREKicg" name="I">
+          <modelElement href="restaurant-service.uml#_gLEKID66Ee-JWMeLREKicg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8Tk34DojEe-kG_4s-KvVRg" comments="_oV9vAD66Ee-JWMeLREKicg" targetConnectionVisual="_oYwkUD66Ee-JWMeLREKicg" name="BaseDao" abstractClass="true" associationsOut="_8Tbt8DojEe-kG_4s-KvVRg" subclassedBy="_8Taf0DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_3zvPgDojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_8Tk34TojEe-kG_4s-KvVRg" position="421.0,35.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_8Tk34jojEe-kG_4s-KvVRg" label="+"/>
+    <attributes xmi:id="_8Tk34zojEe-kG_4s-KvVRg" name="connection">
+      <modelElement href="restaurant-service.uml#_4BA2gDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_VteJ4D66Ee-JWMeLREKicg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_VthNMD66Ee-JWMeLREKicg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_VtleoD66Ee-JWMeLREKicg" name="LegacyStyledElement"/>
+      <visibility xmi:id="_8Tk35TojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8Tk35jojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <type xmi:id="_8Tk35zojEe-kG_4s-KvVRg" name="Connection">
+        <modelElement href="restaurant-service.uml#_38mQkDojEe-kG_4s-KvVRg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_8Tk36DojEe-kG_4s-KvVRg" name="BaseDao">
+      <modelElement href="restaurant-service.uml#_3zxEsDojEe-kG_4s-KvVRg"/>
+      <keywords xmi:id="_8Tk36TojEe-kG_4s-KvVRg" keyword="create"/>
+      <visibility xmi:id="_8Tk36jojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8Tk36zojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8Tk37DojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_3zxEszojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8Tk37TojEe-kG_4s-KvVRg" name="BaseDao">
+          <modelElement href="restaurant-service.uml#_3zvPgDojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8Tk37jojEe-kG_4s-KvVRg" name="BaseDao">
+      <modelElement href="restaurant-service.uml#_4AKh8DojEe-kG_4s-KvVRg"/>
+      <keywords xmi:id="_8Tk37zojEe-kG_4s-KvVRg" keyword="create"/>
+      <visibility xmi:id="_8Tk38DojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8Tk38TojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8Tk38jojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_4AKh9DojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8Tk38zojEe-kG_4s-KvVRg" name="BaseDao">
+          <modelElement href="restaurant-service.uml#_3zvPgDojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8Tk39DojEe-kG_4s-KvVRg" name="connection">
+        <modelElement href="restaurant-service.uml#_4AKh8TojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_8Tk39TojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_8Tk39jojEe-kG_4s-KvVRg" name="Connection">
+          <modelElement href="restaurant-service.uml#_38mQkDojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8UVs4DojEe-kG_4s-KvVRg" comments="_okesID66Ee-JWMeLREKicg" targetConnectionVisual="_om68ID66Ee-JWMeLREKicg" name="DaoFactory">
+    <modelElement href="restaurant-service.uml#_3z95ADojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_8UVs4TojEe-kG_4s-KvVRg" position="820.0,40.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_8UVs4jojEe-kG_4s-KvVRg" label="+"/>
+    <operations xmi:id="_8UVs4zojEe-kG_4s-KvVRg" comments="_o-2T8D66Ee-JWMeLREKicg" targetConnectionVisual="_o_DIQD66Ee-JWMeLREKicg" name="getProductDao">
+      <modelElement href="restaurant-service.uml#_3z_uMDojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_8UVs5DojEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_8UVs5TojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8UVs5jojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_39200DojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_lRDzkD66Ee-JWMeLREKicg" name="ProductDAO">
+          <modelElement href="restaurant-service.uml#_gKzrcT66Ee-JWMeLREKicg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ohlwMD66Ee-JWMeLREKicg" comments="_ohRnID66Ee-JWMeLREKicg" targetConnectionVisual="_ohkiED66Ee-JWMeLREKicg" name="getCategoryDAO">
+      <modelElement href="restaurant-service.uml#_gHDz4D66Ee-JWMeLREKicg"/>
+      <visibility xmi:id="_ohlwMT66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_ohlwMj66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ohlwMz66Ee-JWMeLREKicg">
+        <modelElement href="restaurant-service.uml#_gLH0gD66Ee-JWMeLREKicg"/>
+        <type xmi:id="_ohlwND66Ee-JWMeLREKicg" name="ProductCategoryDAO">
+          <modelElement href="restaurant-service.uml#_gKzEYT66Ee-JWMeLREKicg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_okc28D66Ee-JWMeLREKicg" comments="_ohm-UD66Ee-JWMeLREKicg" targetConnectionVisual="_ohnlYD66Ee-JWMeLREKicg" name="getDetailDAO">
+      <modelElement href="restaurant-service.uml#_gHDz4T66Ee-JWMeLREKicg"/>
+      <visibility xmi:id="_okc28T66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_okc28j66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_okc28z66Ee-JWMeLREKicg">
+        <modelElement href="restaurant-service.uml#_gLH0gT66Ee-JWMeLREKicg"/>
+        <type xmi:id="_okc29D66Ee-JWMeLREKicg" name="OrderDetailDAO">
+          <modelElement href="restaurant-service.uml#_gKydUD66Ee-JWMeLREKicg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8TQHwDojEe-kG_4s-KvVRg" name="SQLException">
+    <modelElement href="restaurant-service.uml#_38Vx4DojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_8TQHwTojEe-kG_4s-KvVRg" position="-15.0,35.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_8TQHwjojEe-kG_4s-KvVRg" name="Reference">
+      <modelElement href="restaurant-service.uml#_38XAADojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <visibility xmi:id="_8TQHwzojEe-kG_4s-KvVRg" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_gvZmQD66Ee-JWMeLREKicg" sourceConnectionVisual="_gyWzoD66Ee-JWMeLREKicg" text="Abstract class providing basic DAO functionality.&#xD;&#xA;&#xD;&#xA;@param &lt;T> the type of the entity&#xD;&#xA;@param &lt;I> the type of the entity ID" item="_8RNgYDojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLqnED66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_kNcacD66Ee-JWMeLREKicg" sourceConnectionVisual="_kN4fUD66Ee-JWMeLREKicg" text="Retrieves an entity by its ID.&#xD;&#xA;     * &#xD;&#xA;     * @param id the ID of the entity&#xD;&#xA;     * @return an Optional containing the entity if found, or empty if not found&#xD;&#xA;     * @throws SQLException if a database access error occurs" item="_kQUIQD66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLrOID66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_kQegUD66Ee-JWMeLREKicg" sourceConnectionVisual="_kQfucD66Ee-JWMeLREKicg" text="Deletes an entity by its ID.&#xD;&#xA;     * &#xD;&#xA;     * @param id the ID of the entity to delete&#xD;&#xA;     * @throws SQLException if a database access error occurs" item="_kQ5XED66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLrOIz66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_kTYDUD66Ee-JWMeLREKicg" sourceConnectionVisual="_kT0vQD66Ee-JWMeLREKicg" text="Generic DAO interface defining CRUD operations.&#xD;&#xA;&#xD;&#xA;@param &lt;T> the type of the entity&#xD;&#xA;@param &lt;I> the type of the entity ID" item="_8UMi8DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLqnEj66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oV9vAD66Ee-JWMeLREKicg" sourceConnectionVisual="_oYwkUD66Ee-JWMeLREKicg" text="Base class providing common DAO functionality." item="_8Tk34DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLqnET66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oejDQD66Ee-JWMeLREKicg" sourceConnectionVisual="_ohJrUD66Ee-JWMeLREKicg" text="Saves an entity.&#xD;&#xA;     * &#xD;&#xA;     * @param t the entity to save&#xD;&#xA;     * @return the saved entity&#xD;&#xA;     * @throws SQLException if a database access error occurs" item="_8UMjAjojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLrOIj66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ohRnID66Ee-JWMeLREKicg" sourceConnectionVisual="_ohkiED66Ee-JWMeLREKicg" text="Returns an instance of ProductCategoryDAO.&#xD;&#xA;     * &#xD;&#xA;     * @return an instance of ProductCategoryDAO" item="_ohlwMD66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLrOJj66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ohm-UD66Ee-JWMeLREKicg" sourceConnectionVisual="_ohnlYD66Ee-JWMeLREKicg" text="Returns an instance of OrderDetailDAO.&#xD;&#xA;     * &#xD;&#xA;     * @return an instance of OrderDetailDAO" item="_okc28D66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLrOJz66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_okesID66Ee-JWMeLREKicg" sourceConnectionVisual="_om68ID66Ee-JWMeLREKicg" text="Factory class for creating DAO instances." item="_8UVs4DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLrOJD66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oqbjID66Ee-JWMeLREKicg" sourceConnectionVisual="_os198D66Ee-JWMeLREKicg" text="Retrieves all products and sends the response.&#xD;&#xA;     *&#xD;&#xA;     * @param resp the HttpServletResponse object.&#xD;&#xA;     * @throws IOException if an I/O error occurs." item="_otNKUD66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLwtsT66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_owK-wD66Ee-JWMeLREKicg" sourceConnectionVisual="_owMM4D66Ee-JWMeLREKicg" text="Retrieves a product by ID and sends the response.&#xD;&#xA;     *&#xD;&#xA;     * @param resp     the HttpServletResponse object.&#xD;&#xA;     * @param pathInfo the path info containing the product ID.&#xD;&#xA;     * @throws IOException if an I/O error occurs." item="_owOCED66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLwtsD66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oyt8cD66Ee-JWMeLREKicg" sourceConnectionVisual="_ozOSwD66Ee-JWMeLREKicg" text="Set with ProductDao parameters for testing.&#xD;&#xA;&#x9; * @param productDAO to be used for test" item="_o1p7sD66Ee-JWMeLREKicg">
+    <modelElement href="restaurant-service.uml#_gLwGoj66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_o734cD66Ee-JWMeLREKicg" sourceConnectionVisual="_o8FT0D66Ee-JWMeLREKicg" text="Retrieves all entities.&#xD;&#xA;     * &#xD;&#xA;     * @return a list of all entities&#xD;&#xA;     * @throws SQLException if a database access error occurs" item="_8UMi9DojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLrOIT66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_o-2T8D66Ee-JWMeLREKicg" sourceConnectionVisual="_o_DIQD66Ee-JWMeLREKicg" text="Returns an instance of ProductDAO.&#xD;&#xA;     * &#xD;&#xA;     * @return an instance of ProductDAO" item="_8UVs4zojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLrOJT66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pExVwD66Ee-JWMeLREKicg" sourceConnectionVisual="_pHNlwD66Ee-JWMeLREKicg" text="Sends an error response with the specified status code and message.&#xD;&#xA;     *&#xD;&#xA;     * @param resp         the HttpServletResponse object.&#xD;&#xA;     * @param statusCode   the HTTP status code.&#xD;&#xA;     * @param errorMessage the error message.&#xD;&#xA;     * @throws IOException if an I/O error occurs." item="_SoqqwDokEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLwtsj66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pKwpAD66Ee-JWMeLREKicg" sourceConnectionVisual="_pNgbAD66Ee-JWMeLREKicg" text="Sends a response with the specified status code and response object.&#xD;&#xA;     *&#xD;&#xA;     * @param resp           the HttpServletResponse object.&#xD;&#xA;     * @param statusCode     the HTTP status code.&#xD;&#xA;     * @param responseObject the response object to send.&#xD;&#xA;     * @throws IOException if an I/O error occurs." item="_SoqqzTokEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_gLwtsz66Ee-JWMeLREKicg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SoqqkDokEe-kG_4s-KvVRg" name="ProductServlet" associationsOut="_Sokj8DokEe-kG_4s-KvVRg _SoqDgDokEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_3zFvQDojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_SoqqkTokEe-kG_4s-KvVRg" position="716.0,180.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_SoqqkjokEe-kG_4s-KvVRg" name="LegacyStyledElement">
+      <modelElement href="restaurant-service.uml#_3zHkcDojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <stereotypes xmi:id="_SoqqkzokEe-kG_4s-KvVRg" name="Annotations">
+      <modelElement href="restaurant-service.uml#_3zQuYDojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <visibility xmi:id="_SoqqlDokEe-kG_4s-KvVRg" label="+"/>
+    <attributes xmi:id="_SoqqlTokEe-kG_4s-KvVRg" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="restaurant-service.uml#_4A-aQDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqljokEe-kG_4s-KvVRg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_4A_BUDojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqlzokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqqmDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoqqmTokEe-kG_4s-KvVRg" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoqqmjokEe-kG_4s-KvVRg" defaultValue="new ObjectMapper()" name="OBJECT_MAPPER" staticAttribute="true">
+      <modelElement href="restaurant-service.uml#_4A_BUTojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_VtjpcD66Ee-JWMeLREKicg" name="StyledElement"/>
+      <stereotypes xmi:id="_Vtk3kD66Ee-JWMeLREKicg" name="StyledElement"/>
+      <stereotypes xmi:id="_VtmswD66Ee-JWMeLREKicg" name="StyledElement"/>
+      <visibility xmi:id="_SoqqnDokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqqnTokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoqqnjokEe-kG_4s-KvVRg" name="ObjectMapper">
+        <modelElement href="restaurant-service.uml#_38eUwTojEe-kG_4s-KvVRg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoqqnzokEe-kG_4s-KvVRg" name="productDAO">
+      <modelElement href="restaurant-service.uml#_4A_oYTojEe-kG_4s-KvVRg"/>
+      <visibility xmi:id="_SoqqoDokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqqoTokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <type xmi:id="_lRmmID66Ee-JWMeLREKicg" name="ProductDAO">
+        <modelElement href="restaurant-service.uml#_gKzrcT66Ee-JWMeLREKicg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SoqqozokEe-kG_4s-KvVRg" name="init">
+      <modelElement href="restaurant-service.uml#_3zIykDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqpDokEe-kG_4s-KvVRg" name="Annotations">
+        <modelElement href="restaurant-service.uml#_3zLO0DojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqpTokEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_SoqqpjokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SoqqpzokEe-kG_4s-KvVRg" name="doPost">
+      <modelElement href="restaurant-service.uml#_3_5cMDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqqDokEe-kG_4s-KvVRg" name="Annotations">
+        <modelElement href="restaurant-service.uml#_3_6DQDojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqqTokEe-kG_4s-KvVRg" label="+"/>
+      <cardinality xmi:id="_SoqqqjokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SoqqqzokEe-kG_4s-KvVRg" name="req">
+        <modelElement href="restaurant-service.uml#_3_5cMTojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqrDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqrTokEe-kG_4s-KvVRg" name="HttpServletRequest">
+          <modelElement href="restaurant-service.uml#_38b4gTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoqqrjokEe-kG_4s-KvVRg" name="resp">
+        <modelElement href="restaurant-service.uml#_3_5cMjojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqrzokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqsDokEe-kG_4s-KvVRg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SoqqsTokEe-kG_4s-KvVRg" name="parseRequestBody">
+      <modelElement href="restaurant-service.uml#_3_9GkDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqsjokEe-kG_4s-KvVRg" name="TypeParameterDeclaration">
+        <modelElement href="restaurant-service.uml#_3_9toDojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqszokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqqtDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SoqqtTokEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_3_9toTojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_SoqqtjokEe-kG_4s-KvVRg" name="T">
+          <modelElement href="restaurant-service.uml#_3_6qUDojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SoqqtzokEe-kG_4s-KvVRg" name="req">
+        <modelElement href="restaurant-service.uml#_3_9GkTojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqquDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqquTokEe-kG_4s-KvVRg" name="HttpServletRequest">
+          <modelElement href="restaurant-service.uml#_38b4gTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoqqujokEe-kG_4s-KvVRg" name="resp">
+        <modelElement href="restaurant-service.uml#_3_9GkjojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqquzokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqvDokEe-kG_4s-KvVRg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoqqvTokEe-kG_4s-KvVRg" name="clazz">
+        <modelElement href="restaurant-service.uml#_3_9GkzojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqvjokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqvzokEe-kG_4s-KvVRg" name="Class">
+          <modelElement href="restaurant-service.uml#_3_74cTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SoqqwDokEe-kG_4s-KvVRg" comments="_pExVwD66Ee-JWMeLREKicg" targetConnectionVisual="_pHNlwD66Ee-JWMeLREKicg" name="sendError">
+      <modelElement href="restaurant-service.uml#_3_-7wDojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqwTokEe-kG_4s-KvVRg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_3__i0jojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqwjokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_SoqqwzokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SoqqxDokEe-kG_4s-KvVRg" name="resp">
+        <modelElement href="restaurant-service.uml#_3_-7wTojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqxTokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqxjokEe-kG_4s-KvVRg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoqqxzokEe-kG_4s-KvVRg" name="statusCode">
+        <modelElement href="restaurant-service.uml#_3__i0DojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqyDokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqyTokEe-kG_4s-KvVRg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoqqyjokEe-kG_4s-KvVRg" name="errorMessage">
+        <modelElement href="restaurant-service.uml#_3__i0TojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_SoqqyzokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoqqzDokEe-kG_4s-KvVRg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SoqqzTokEe-kG_4s-KvVRg" comments="_pKwpAD66Ee-JWMeLREKicg" targetConnectionVisual="_pNgbAD66Ee-JWMeLREKicg" name="sendResponse">
+      <modelElement href="restaurant-service.uml#_4ABYADojEe-kG_4s-KvVRg"/>
+      <stereotypes xmi:id="_SoqqzjokEe-kG_4s-KvVRg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_4AB_EDojEe-kG_4s-KvVRg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoqqzzokEe-kG_4s-KvVRg" label="-"/>
+      <cardinality xmi:id="_Soqq0DokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Soqq0TokEe-kG_4s-KvVRg" name="resp">
+        <modelElement href="restaurant-service.uml#_4ABYATojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_Soqq0jokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_Soqq0zokEe-kG_4s-KvVRg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Soqq1DokEe-kG_4s-KvVRg" name="statusCode">
+        <modelElement href="restaurant-service.uml#_4ABYAjojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_Soqq1TokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_Soqq1jokEe-kG_4s-KvVRg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Soqq1zokEe-kG_4s-KvVRg" name="responseObject">
+        <modelElement href="restaurant-service.uml#_4ABYAzojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_Soqq2DokEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_Soqq2TokEe-kG_4s-KvVRg" name="Object">
+          <modelElement href="restaurant-service.uml#_4AAJ4DojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oqKdYD66Ee-JWMeLREKicg" name="doPut">
+      <modelElement href="restaurant-service.uml#_gIQGsD66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_oqKdYT66Ee-JWMeLREKicg" name="Annotations">
+        <modelElement href="restaurant-service.uml#_gIQtwD66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_oqKdYj66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_oqKdYz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oqKdZD66Ee-JWMeLREKicg" name="req">
+        <modelElement href="restaurant-service.uml#_gIQGsT66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_oqKdZT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_oqKdZj66Ee-JWMeLREKicg" name="HttpServletRequest">
+          <modelElement href="restaurant-service.uml#_38b4gTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oqKdZz66Ee-JWMeLREKicg" name="resp">
+        <modelElement href="restaurant-service.uml#_gIQGsj66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_oqKdaD66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_oqKdaT66Ee-JWMeLREKicg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oqNgsD66Ee-JWMeLREKicg" name="doGet">
+      <modelElement href="restaurant-service.uml#_gIQtwj66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_oqNgsT66Ee-JWMeLREKicg" name="Annotations">
+        <modelElement href="restaurant-service.uml#_gIRU0D66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_oqNgsj66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_oqNgsz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oqNgtD66Ee-JWMeLREKicg" name="req">
+        <modelElement href="restaurant-service.uml#_gIQtwz66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_oqNgtT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_oqNgtj66Ee-JWMeLREKicg" name="HttpServletRequest">
+          <modelElement href="restaurant-service.uml#_38b4gTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oqNgtz66Ee-JWMeLREKicg" name="resp">
+        <modelElement href="restaurant-service.uml#_gIQtxD66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_oqNguD66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_oqNguT66Ee-JWMeLREKicg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_otNKUD66Ee-JWMeLREKicg" comments="_oqbjID66Ee-JWMeLREKicg" targetConnectionVisual="_os198D66Ee-JWMeLREKicg" name="getAllProducts">
+      <modelElement href="restaurant-service.uml#_gIR74D66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_otNKUT66Ee-JWMeLREKicg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_gIrkgD66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_otNKUj66Ee-JWMeLREKicg" label="-"/>
+      <cardinality xmi:id="_otNKUz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_otNKVD66Ee-JWMeLREKicg" name="resp">
+        <modelElement href="restaurant-service.uml#_gIR74T66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_otNKVT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_otNKVj66Ee-JWMeLREKicg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_otVGID66Ee-JWMeLREKicg" name="doDelete">
+      <modelElement href="restaurant-service.uml#_gIR74j66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_otVGIT66Ee-JWMeLREKicg" name="Annotations">
+        <modelElement href="restaurant-service.uml#_gISi8D66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_otVGIj66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_otVGIz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_otVGJD66Ee-JWMeLREKicg" name="req">
+        <modelElement href="restaurant-service.uml#_gIR74z66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_otVGJT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_otVGJj66Ee-JWMeLREKicg" name="HttpServletRequest">
+          <modelElement href="restaurant-service.uml#_38b4gTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_otVGJz66Ee-JWMeLREKicg" name="resp">
+        <modelElement href="restaurant-service.uml#_gIR75D66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_otVGKD66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_otVGKT66Ee-JWMeLREKicg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_owOCED66Ee-JWMeLREKicg" comments="_owK-wD66Ee-JWMeLREKicg" targetConnectionVisual="_owMM4D66Ee-JWMeLREKicg" name="getProductById">
+      <modelElement href="restaurant-service.uml#_gI8DMD66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_owOCET66Ee-JWMeLREKicg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_gI8qQD66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_owOCEj66Ee-JWMeLREKicg" label="-"/>
+      <cardinality xmi:id="_owOCEz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_owOCFD66Ee-JWMeLREKicg" name="resp">
+        <modelElement href="restaurant-service.uml#_gI8DMT66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_owOCFT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_owOCFj66Ee-JWMeLREKicg" name="HttpServletResponse">
+          <modelElement href="restaurant-service.uml#_38dGoTojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_owOCFz66Ee-JWMeLREKicg" name="pathInfo">
+        <modelElement href="restaurant-service.uml#_gI8DMj66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_owOCGD66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_owOCGT66Ee-JWMeLREKicg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_o1p7sD66Ee-JWMeLREKicg" comments="_oyt8cD66Ee-JWMeLREKicg" targetConnectionVisual="_ozOSwD66Ee-JWMeLREKicg" name="setProductDAO">
+      <modelElement href="restaurant-service.uml#_gLOiMD66Ee-JWMeLREKicg"/>
+      <stereotypes xmi:id="_o1p7sT66Ee-JWMeLREKicg" name="StyledElement">
+        <modelElement href="restaurant-service.uml#_gLOiMj66Ee-JWMeLREKicg"/>
+      </stereotypes>
+      <visibility xmi:id="_o1p7sj66Ee-JWMeLREKicg" label="+"/>
+      <cardinality xmi:id="_o1p7sz66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_o1p7tD66Ee-JWMeLREKicg" name="productDAO">
+        <modelElement href="restaurant-service.uml#_gLOiMT66Ee-JWMeLREKicg"/>
+        <cardinality xmi:id="_o1p7tT66Ee-JWMeLREKicg" label="1" max="1" min="1"/>
+        <type xmi:id="_o1p7tj66Ee-JWMeLREKicg" name="ProductDAO">
+          <modelElement href="restaurant-service.uml#_gKzrcT66Ee-JWMeLREKicg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8RNgYDojEe-kG_4s-KvVRg" comments="_gvZmQD66Ee-JWMeLREKicg" targetConnectionVisual="_gyWzoD66Ee-JWMeLREKicg" name="AbstractDao" abstractClass="true" generalizations="_8Taf0DojEe-kG_4s-KvVRg _8UJfoDojEe-kG_4s-KvVRg">
+    <modelElement href="restaurant-service.uml#_3zf-8DojEe-kG_4s-KvVRg"/>
+    <visualProperties xmi:id="_8RNgYTojEe-kG_4s-KvVRg" position="212.0,343.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_8RNgYjojEe-kG_4s-KvVRg" name="Generics">
+      <modelElement href="restaurant-service.uml#_3zibMDojEe-kG_4s-KvVRg"/>
+    </stereotypes>
+    <visibility xmi:id="_8RNgYzojEe-kG_4s-KvVRg" label="+"/>
+    <operations xmi:id="_8RNgZDojEe-kG_4s-KvVRg" name="AbstractDao">
+      <modelElement href="restaurant-service.uml#_3zjpUDojEe-kG_4s-KvVRg"/>
+      <keywords xmi:id="_8RNgZTojEe-kG_4s-KvVRg" keyword="create"/>
+      <visibility xmi:id="_8RNgZjojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8ROugDojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8ROugTojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_3zk3cDojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8ROugjojEe-kG_4s-KvVRg" name="AbstractDao">
+          <modelElement href="restaurant-service.uml#_3zf-8DojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8ROuiDojEe-kG_4s-KvVRg" name="AbstractDao">
+      <modelElement href="restaurant-service.uml#_4ADNMDojEe-kG_4s-KvVRg"/>
+      <keywords xmi:id="_8ROuiTojEe-kG_4s-KvVRg" keyword="create"/>
+      <visibility xmi:id="_8ROuijojEe-kG_4s-KvVRg" label="#"/>
+      <cardinality xmi:id="_8ROuizojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_8ROujDojEe-kG_4s-KvVRg">
+        <modelElement href="restaurant-service.uml#_4AD0QzojEe-kG_4s-KvVRg"/>
+        <type xmi:id="_8ROujTojEe-kG_4s-KvVRg" name="AbstractDao">
+          <modelElement href="restaurant-service.uml#_3zf-8DojEe-kG_4s-KvVRg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8ROujjojEe-kG_4s-KvVRg" name="connection">
+        <modelElement href="restaurant-service.uml#_4AD0QDojEe-kG_4s-KvVRg"/>
+        <cardinality xmi:id="_8ROujzojEe-kG_4s-KvVRg" label="1" max="1" min="1"/>
+        <type xmi:id="_8ROukDojEe-kG_4s-KvVRg" name="Connection">
+          <modelElement href="restaurant-service.uml#_38mQkDojEe-kG_4s-KvVRg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

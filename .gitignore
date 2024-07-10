@@ -1,0 +1,49 @@
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# Maven target directory
+/target/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# NetBeans files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code files
+.vscode/
+
+# Log files
+*.log
+
+# Class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Generated files
+/apidocs/
+/out/
+
+# Database configuration
+*.yml
+
+# Testcontainers files
+/docker/
+
+# SonarLint files
+/.sonarlint/
+
+# Miscellaneous
+.DS_Store
+*.swp
