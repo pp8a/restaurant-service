@@ -20,7 +20,9 @@ public interface OrderApprovalMapper {
      * @param orderApproval the OrderApproval entity.
      * @return the OrderApprovalDTO.
      */
-    @Mapping(source = "orderDetail.orderStatus", target = "orderDetail.orderStatus", qualifiedByName = "toDto")
+    @Mapping(source = "orderDetail.orderStatus", 
+    		target = "orderDetail.orderStatus", 
+    		qualifiedByName = "toDto")
     OrderApprovalDTO toDTO(OrderApproval orderApproval);
 
     /**
@@ -29,6 +31,8 @@ public interface OrderApprovalMapper {
      * @param orderApprovalDTO the OrderApprovalDTO.
      * @return the OrderApproval entity.
      */
-    @Mapping(source = "orderDetail.orderStatus", target = "orderDetail.orderStatus", qualifiedByName = "toEntity")
+    @Mapping(source = "orderDetail.orderStatus", 
+    		target = "orderDetail.orderStatus", 
+    		qualifiedByName = "toEntity")
     OrderApproval toEntity(OrderApprovalDTO orderApprovalDTO);
 }

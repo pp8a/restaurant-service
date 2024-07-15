@@ -18,7 +18,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import com.restaurant.controllers.ProductServlet;
-import com.restaurant.dao.entity.ProductDAO;
+import com.restaurant.dao.impl.ProductDAO;
 import com.restaurant.dto.ProductDTO;
 import com.restaurant.entity.Product;
 

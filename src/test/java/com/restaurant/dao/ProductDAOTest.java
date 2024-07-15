@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.restaurant.dao.entity.ProductDAO;
+import com.restaurant.dao.impl.ProductDAO;
 import com.restaurant.entity.Product;
 import com.restaurant.entity.ProductCategory;
 import com.restaurant.queries.ProductSQLQueries;
@@ -70,7 +70,8 @@ class ProductDAOTest {
      */
     @Test
     void testCreateProduct() throws SQLException {
-        when(mockConnection.prepareStatement(ProductSQLQueries.INSERT_PRODUCT, Statement.RETURN_GENERATED_KEYS))
+        when(mockConnection.prepareStatement(ProductSQLQueries.INSERT_PRODUCT, 
+        		Statement.RETURN_GENERATED_KEYS))
             .thenReturn(mockPreparedStatement);
 
         Product product = createSampleProduct();
@@ -170,9 +171,11 @@ class ProductDAOTest {
      */
     @Test
     void testDeleteProduct() throws SQLException {
-        when(mockConnection.prepareStatement(ProductSQLQueries.DELETE_ORDER_DETAIL_PRODUCTS_BY_PRODUCT_ID))
+        when(mockConnection.prepareStatement(
+        		ProductSQLQueries.DELETE_ORDER_DETAIL_PRODUCTS_BY_PRODUCT_ID))
             .thenReturn(mockPreparedStatement);
-        when(mockConnection.prepareStatement(ProductSQLQueries.DELETE_PRODUCT))
+        when(mockConnection.prepareStatement(
+        		ProductSQLQueries.DELETE_PRODUCT))
             .thenReturn(mockPreparedStatement);
         
         int productId = 1;        

@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.restaurant.dao.entity.OrderApprovalDAO;
+import com.restaurant.dao.impl.OrderApprovalDAO;
 import com.restaurant.entity.OrderApproval;
 import com.restaurant.entity.OrderDetail;
 import com.restaurant.queries.OrderApprovalSQLQueries;
@@ -67,7 +67,8 @@ class OrderApprovalDAOTest {
     @Test
     void testCreateOrderApproval() throws SQLException {
     	
-        when(mockConnection.prepareStatement(OrderApprovalSQLQueries.INSERT_APPROVAL, Statement.RETURN_GENERATED_KEYS))
+        when(mockConnection.prepareStatement(OrderApprovalSQLQueries.INSERT_APPROVAL, 
+        		Statement.RETURN_GENERATED_KEYS))
             .thenReturn(mockPreparedStatement);
 
         OrderApproval orderApproval = createSampleOrderApproval();

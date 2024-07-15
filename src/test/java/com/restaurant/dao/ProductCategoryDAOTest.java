@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.restaurant.dao.entity.ProductCategoryDAO;
+import com.restaurant.dao.impl.ProductCategoryDAO;
 import com.restaurant.entity.Product;
 import com.restaurant.entity.ProductCategory;
 import com.restaurant.queries.ProductCategorySQLQueries;
@@ -71,7 +71,8 @@ class ProductCategoryDAOTest {
      */
     @Test
     void testCreateCategory() throws SQLException {
-        when(mockConnection.prepareStatement(ProductCategorySQLQueries.INSERT_CATEGORY, Statement.RETURN_GENERATED_KEYS))
+        when(mockConnection.prepareStatement(ProductCategorySQLQueries.INSERT_CATEGORY, 
+        		Statement.RETURN_GENERATED_KEYS))
                .thenReturn(mockPreparedStatement);
 
         ProductCategory category = createSampleProductCategory();
@@ -187,11 +188,14 @@ class ProductCategoryDAOTest {
      */
     @Test
     void testDeleteProduct() throws SQLException {
-    	 when(mockConnection.prepareStatement(ProductCategorySQLQueries.DELETE_ORDER_DETAIL_PRODUCTS_BY_CATEGORY_ID))
+    	 when(mockConnection.prepareStatement(
+    			 ProductCategorySQLQueries.DELETE_ORDER_DETAIL_PRODUCTS_BY_CATEGORY_ID))
          		.thenReturn(mockPreparedStatement);
-    	 when(mockConnection.prepareStatement(ProductCategorySQLQueries.DELETE_PRODUCTS_BY_CATEGORY_ID))
+    	 when(mockConnection.prepareStatement(
+    			 ProductCategorySQLQueries.DELETE_PRODUCTS_BY_CATEGORY_ID))
   				.thenReturn(mockPreparedStatement);
-    	 when(mockConnection.prepareStatement(ProductCategorySQLQueries.DELETE_CATEGORY))
+    	 when(mockConnection.prepareStatement(
+    			 ProductCategorySQLQueries.DELETE_CATEGORY))
 			.thenReturn(mockPreparedStatement);
     	 
     	 int productId = 1;
@@ -201,14 +205,16 @@ class ProductCategoryDAOTest {
          verify(mockPreparedStatement, times(3)).executeUpdate();    	 
     }
     
-    private void mockResultSetForProductCategory(ProductCategory category) throws SQLException {
+    private void mockResultSetForProductCategory(ProductCategory category) 
+    		throws SQLException {
         when(mockResultSet.next()).thenReturn(true, false);
         when(mockResultSet.getInt("category_id")).thenReturn(category.getId());
         when(mockResultSet.getString("category_name")).thenReturn(category.getName());
         when(mockResultSet.getString("category_type")).thenReturn(category.getType());
     }
 
-    private void mockResultSetForProductsInCategory(ResultSet mockProductResultSet, Product product) throws SQLException {
+    private void mockResultSetForProductsInCategory(ResultSet mockProductResultSet, Product product) 
+    		throws SQLException {
         when(mockProductResultSet.next()).thenReturn(true, false);
         when(mockProductResultSet.getInt("id")).thenReturn(product.getId());
         when(mockProductResultSet.getString("name")).thenReturn(product.getName());
@@ -217,10 +223,12 @@ class ProductCategoryDAOTest {
         when(mockProductResultSet.getBoolean("available")).thenReturn(product.isAvailable());
     }
 
-    private PreparedStatement setupMockForProductsInCategory(Product product) throws SQLException {
+    private PreparedStatement setupMockForProductsInCategory(Product product) 
+    		throws SQLException {
         PreparedStatement mockProductPreparedStatement = mock(PreparedStatement.class);
         ResultSet mockProductResultSet = mock(ResultSet.class);
-        when(mockConnection.prepareStatement(ProductCategorySQLQueries.GET_PRODUCTS_BY_CATEGORY_ID))
+        when(mockConnection.prepareStatement(
+        		ProductCategorySQLQueries.GET_PRODUCTS_BY_CATEGORY_ID))
                 .thenReturn(mockProductPreparedStatement);
         when(mockProductPreparedStatement.executeQuery()).thenReturn(mockProductResultSet);
         mockResultSetForProductsInCategory(mockProductResultSet, product);
@@ -244,5 +252,3 @@ class ProductCategoryDAOTest {
         return category;
     }
 }
-
-

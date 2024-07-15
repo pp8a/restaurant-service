@@ -17,11 +17,8 @@ public class TestUtils {
      * A custom ServletOutputStream for testing purposes.
      */
 	public static class TestServletOutputStream extends ServletOutputStream{
-		private final ByteArrayOutputStream byteArrayOutputStream;
+		private final ByteArrayOutputStream byteArrayOutputStream;		
 		
-		/**
-         * Constructs a new TestServletOutputStream.
-         */
 		public TestServletOutputStream() {
 			byteArrayOutputStream = new ByteArrayOutputStream();
 		}

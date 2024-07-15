@@ -20,7 +20,9 @@ public interface OrderDetailMapper {
      * @param orderDetail the OrderDetail entity.
      * @return the OrderDetailDTO.
      */
-	@Mapping(source = "orderStatus", target = "orderStatus", qualifiedByName = "toDto")
+	@Mapping(source = "orderStatus", 
+			target = "orderStatus", 
+			qualifiedByName = "toDto")
 	OrderDetailDTO toDTO(OrderDetail orderDetail);
 	
 	 /**
@@ -29,6 +31,8 @@ public interface OrderDetailMapper {
      * @param orderDetailDTO the OrderDetailDTO.
      * @return the OrderDetail entity.
      */
-	@Mapping(source = "orderStatus", target = "orderStatus", qualifiedByName = "toEntity")
+	@Mapping(source = "orderStatus", 
+			target = "orderStatus", 
+			qualifiedByName = "toEntity")
 	OrderDetail toEntity(OrderDetailDTO orderDetailDTO);
 }

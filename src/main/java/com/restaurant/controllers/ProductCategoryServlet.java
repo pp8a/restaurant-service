@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.restaurant.dao.DaoFactory;
-import com.restaurant.dao.entity.ProductCategoryDAO;
+import com.restaurant.dao.impl.ProductCategoryDAO;
 import com.restaurant.dto.ProductCategoryDTO;
 import com.restaurant.entity.ProductCategory;
 import com.restaurant.mapper.ProductCategoryMapper;
@@ -68,7 +68,8 @@ public class ProductCategoryServlet extends HttpServlet{
 		try {
             categoryDAO.save(category);
         } catch (SQLException e) {
-            sendError(resp, HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error creating or updating category of rpoduct");
+            sendError(resp, HttpServletResponse.SC_INTERNAL_SERVER_ERROR, 
+            		"Error creating or updating category of rpoduct");
             return;
         }
 		
@@ -106,7 +107,8 @@ public class ProductCategoryServlet extends HttpServlet{
 		try {
             categoryDAO.save(category);
         } catch (SQLException e) {
-            sendError(resp, HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error creating or updating category of product");
+            sendError(resp, HttpServletResponse.SC_INTERNAL_SERVER_ERROR, 
+            		"Error creating or updating category of product");
             return;
         }
 		

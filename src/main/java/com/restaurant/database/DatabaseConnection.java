@@ -9,16 +9,16 @@ import java.sql.SQLException;
  * Singleton class for managing the database connection.
  */
 public class DatabaseConnection {	
-	private Connection connection;
+	private Connection connection;	
 	
-	/**
-     * Private constructor that initializes the database connection.
-     */
 	private DatabaseConnection() {
 		DatabaseConfig config = DatabaseConfig.load();
 		try {			 
 			Class.forName(config.getDriver());
-			this.connection = DriverManager.getConnection(config.getUrl(), config.getUsername(), config.getPassword());
+			this.connection = DriverManager.getConnection(
+					config.getUrl(), 
+					config.getUsername(), 
+					config.getPassword());
 			DatabaseInitializer.initializeDatabase(connection);
 		} catch (SQLException | ClassNotFoundException | IOException e) {
 			throw new DatabaseConfigException("Failed to connect to the database", e);

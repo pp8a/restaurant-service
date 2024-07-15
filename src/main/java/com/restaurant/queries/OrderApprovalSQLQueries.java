@@ -7,7 +7,8 @@ public class OrderApprovalSQLQueries {
 	/**
      * SQL query to insert a new order approval into the database.
      */
-	public static final String INSERT_APPROVAL = "INSERT INTO order_approvals (order_detail_id) VALUES (?)";
+	public static final String INSERT_APPROVAL = "INSERT INTO order_approvals (order_detail_id) "
+			+ "VALUES (?)";
 	
 	/**
      * SQL query to retrieve an order approval by its ID from the database.
@@ -33,16 +34,15 @@ public class OrderApprovalSQLQueries {
     /**
      * SQL query to update an existing order approval in the database.
      */
-    public static final String UPDATE_APPROVAL = "UPDATE order_approvals SET order_detail_id = ? WHERE id = ?";
+    public static final String UPDATE_APPROVAL = "UPDATE order_approvals SET order_detail_id = ? "
+    		+ "WHERE id = ?";
     
     /**
      * SQL query to delete an order approval by its ID from the database.
      */
-    public static final String DELETE_APPROVAL = "DELETE FROM order_approvals WHERE id = ?";
-
-    /**
-     * Private constructor to prevent instantiation of this utility class.
-     */
+    public static final String DELETE_APPROVAL = "DELETE FROM order_approvals "
+    		+ "WHERE id = ?";
+    
     private OrderApprovalSQLQueries() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }

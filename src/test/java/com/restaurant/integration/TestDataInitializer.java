@@ -9,9 +9,7 @@ import java.sql.SQLException;
  * This class provides methods to create tables and insert test data.
  */
 public class TestDataInitializer {
-	/**
-     * Private constructor to prevent instantiation of this utility class.
-     */
+	
 	private TestDataInitializer() {
 		throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
 	}
@@ -149,7 +147,9 @@ public class TestDataInitializer {
      * @throws SQLException if a database access error occurs
      */
     public static void insertTestProduct(Connection connection) throws SQLException {
-        String insertProduct = "INSERT INTO products (name, price, quantity, available, category_id) VALUES "
+        String insertProduct = "INSERT INTO products "
+        		+ "(name, price, quantity, available, category_id) "
+        		+ "VALUES "
                 + "('Test product', 5.99, 50, TRUE, 1),"
                 + "('Spring Rolls', 5.99, 50, TRUE, 1),"
                 + "('Grilled Chicken', 12.99, 30, TRUE, 2),"
@@ -182,7 +182,8 @@ public class TestDataInitializer {
      * @throws SQLException if a database access error occurs
      */
     public static void insertTestOrderDetails(Connection connection) throws SQLException {
-        String insertOrderDetails = "INSERT INTO order_details (order_status_id, total_amount) VALUES "
+        String insertOrderDetails = "INSERT INTO order_details (order_status_id, total_amount) "
+        		+ "VALUES "
                 + "(1, 25.97),"
                 + "(2, 10.98),"
                 + "(3, 23.98)";
@@ -196,7 +197,8 @@ public class TestDataInitializer {
      * @throws SQLException if a database access error occurs
      */
     public static void insertTestOrderApproval(Connection connection) throws SQLException {
-        String insertOrderApproval = "INSERT INTO order_approvals (order_detail_id) VALUES "
+        String insertOrderApproval = "INSERT INTO order_approvals (order_detail_id) "
+        		+ "VALUES "
                 + "(2)";
         executeStatement(connection, insertOrderApproval);
     }
@@ -208,7 +210,8 @@ public class TestDataInitializer {
      * @throws SQLException if a database access error occurs
      */
     public static void insertTestOrderDetailProduct(Connection connection) throws SQLException {
-        String insertOrderDetailProduct = "INSERT INTO order_detail_products (order_detail_id, product_id) VALUES "
+        String insertOrderDetailProduct = "INSERT INTO order_detail_products (order_detail_id, product_id) "
+        		+ "VALUES "
                 + "(1, 1),"
                 + "(1, 2),"
                 + "(1, 3),"

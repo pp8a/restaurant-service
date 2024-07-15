@@ -36,7 +36,8 @@ class UtilityClassTest {
             Throwable exception = assertThrows(InvocationTargetException.class, () -> {
                 constructor.newInstance();
             }).getCause();
-            assertTrue(exception instanceof UnsupportedOperationException, "Expected UnsupportedOperationException");
+            assertTrue(exception instanceof UnsupportedOperationException, 
+            		"Expected UnsupportedOperationException");
         }
     }
 	

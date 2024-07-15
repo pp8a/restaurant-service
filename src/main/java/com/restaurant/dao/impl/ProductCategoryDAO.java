@@ -1,4 +1,4 @@
-package com.restaurant.dao.entity;
+package com.restaurant.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,31 +24,19 @@ import com.restaurant.queries.ProductCategorySQLQueries;
  */
 public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductCategoryDAO.class);	
-	/**
-	 * Default constructor.
-	 */
+	
 	public ProductCategoryDAO() {
 		super();
 	}
-	/**
-     * Constructor with connection parameter for testing.
-     *
-     * @param connection the database connection.
-     */
+	
 	public ProductCategoryDAO(Connection connection) {
 		super(connection);		
-	}
+	}	
 	
-	/**
-     * Retrieves a ProductCategory entity by its ID.
-     *
-     * @param categoryId the ID of the ProductCategory to retrieve.
-     * @return an Optional containing the found ProductCategory, or an empty Optional if not found.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public Optional<ProductCategory> getById(Integer categoryId) throws SQLException {
-		try(PreparedStatement pstmt = connection.prepareStatement(ProductCategorySQLQueries.GET_CATEGORY_BY_ID)) {			            
+		try(PreparedStatement pstmt = connection.prepareStatement(
+				ProductCategorySQLQueries.GET_CATEGORY_BY_ID)) {			            
             pstmt.setInt(1, categoryId);
             try(ResultSet rs = pstmt.executeQuery()) {
             	if(rs.next()) {
@@ -88,7 +76,8 @@ public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
      */
 	public List<Product> getProductsByCategoryId(Integer categoryId) throws SQLException {
         List<Product> products = new ArrayList<>(); 
-        try(PreparedStatement pstmt = connection.prepareStatement(ProductCategorySQLQueries.GET_PRODUCTS_BY_CATEGORY_ID)) {
+        try(PreparedStatement pstmt = connection.prepareStatement(
+        		ProductCategorySQLQueries.GET_PRODUCTS_BY_CATEGORY_ID)) {
             pstmt.setInt(1, categoryId);
             try(ResultSet rs = pstmt.executeQuery()) {
             	while(rs.next()) {
@@ -119,16 +108,11 @@ public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
 		return product;
 	}
 
-	/**
-     * Retrieves all ProductCategory entities from the database.
-     *
-     * @return a list of all ProductCategory entities.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public List<ProductCategory> getAll() throws SQLException {
 		 List<ProductCategory> productCategories = new ArrayList<>();
-		 try (PreparedStatement pstmt = connection.prepareStatement(ProductCategorySQLQueries.GET_ALL_CATEGORIES)) {	            
+		 try (PreparedStatement pstmt = connection.prepareStatement(
+				 ProductCategorySQLQueries.GET_ALL_CATEGORIES)) {	            
 	            ResultSet rs = pstmt.executeQuery();
 	            while(rs.next()) {
 	                productCategories.add(mapResultSetToCategory(rs));
@@ -139,13 +123,6 @@ public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
 	     return productCategories;  
 	}
 
-	/**
-     * Saves a ProductCategory entity. If the category exists, it is updated. Otherwise, a new category is created.
-     *
-     * @param productCategory the ProductCategory entity to save.
-     * @return the saved ProductCategory entity.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public ProductCategory save(ProductCategory category) throws SQLException {		
 		return getById(category.getId()).isPresent() ? updateCategory(category) : createCategory(category);
@@ -159,7 +136,9 @@ public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
      * @throws SQLException if a database access error occurs.
      */
 	private ProductCategory createCategory(ProductCategory category) throws SQLException {
-		PreparedStatement pstmt = connection.prepareStatement(ProductCategorySQLQueries.INSERT_CATEGORY, Statement.RETURN_GENERATED_KEYS);
+		PreparedStatement pstmt = connection.prepareStatement(
+				ProductCategorySQLQueries.INSERT_CATEGORY, 
+				Statement.RETURN_GENERATED_KEYS);
 		populatePreparedStatement(category, pstmt);
 		pstmt.executeUpdate();
 		
@@ -188,20 +167,15 @@ public class ProductCategoryDAO extends AbstractDao<ProductCategory, Integer>{
      * @throws SQLException if a database access error occurs.
      */
 	private ProductCategory updateCategory(ProductCategory category) throws SQLException {
-		PreparedStatement pstmt = connection.prepareStatement(ProductCategorySQLQueries.UPDATE_CATEGORY);
+		PreparedStatement pstmt = connection.prepareStatement(
+				ProductCategorySQLQueries.UPDATE_CATEGORY);
 		populatePreparedStatement(category, pstmt);
 		pstmt.setInt(3, category.getId());
 		pstmt.executeUpdate();
 		
 		return category;
 	}
-
-	/**
-    * Deletes a ProductCategory entity by its ID and its associated products.
-    *
-    * @param categoryId the ID of the ProductCategory to delete.
-    * @throws SQLException if a database access error occurs.
-    */
+	
 	@Override
     public void delete(Integer categoryId) throws SQLException {
         try {

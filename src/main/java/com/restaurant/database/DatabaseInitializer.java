@@ -14,9 +14,6 @@ import java.util.stream.Collectors;
  */
 public class DatabaseInitializer {
 	
-	/**
-     * Private constructor to prevent instantiation.
-     */
 	private DatabaseInitializer() {
 		throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
 	}
@@ -28,7 +25,8 @@ public class DatabaseInitializer {
      * @throws SQLException if a database access error occurs.
      * @throws IOException if an I/O error occurs.
      */
-	public static void initializeDatabase(Connection connection) throws SQLException, IOException {
+	public static void initializeDatabase(Connection connection) 
+			throws SQLException, IOException {
         executeSqlScript(connection, "init-ddl.sql");
         executeSqlScript(connection, "init-dml.sql");
     }
@@ -41,7 +39,8 @@ public class DatabaseInitializer {
      * @throws SQLException if a database access error occurs.
      * @throws IOException if an I/O error occurs.
      */	
-	private static void executeSqlScript(Connection connection, String scriptPath) throws SQLException, IOException {
+	private static void executeSqlScript(Connection connection, String scriptPath) 
+			throws SQLException, IOException {
         String sqlScript = getSql(scriptPath);
         try (Statement stmt = connection.createStatement()) {
             stmt.execute(sqlScript);
@@ -55,8 +54,11 @@ public class DatabaseInitializer {
      * @return the SQL script as a String.
      * @throws IOException if an I/O error occurs.
      */
-	private static String getSql(final String resourceName) throws IOException {
-        InputStream inputStream = DatabaseInitializer.class.getClassLoader().getResourceAsStream(resourceName);
+	private static String getSql(final String resourceName) 
+			throws IOException {
+        InputStream inputStream = DatabaseInitializer.class
+        		.getClassLoader()
+        		.getResourceAsStream(resourceName);
         if (inputStream == null) {
             throw new IOException("Script file not found: " + resourceName);
         }
