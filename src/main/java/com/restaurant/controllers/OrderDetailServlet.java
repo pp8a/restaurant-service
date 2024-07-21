@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.restaurant.dao.DaoFactory;
-import com.restaurant.dao.entity.OrderDetailDAO;
+import com.restaurant.dao.impl.OrderDetailDAO;
 import com.restaurant.dto.OrderDetailDTO;
 import com.restaurant.entity.OrderDetail;
 import com.restaurant.mapper.OrderDetailMapper;

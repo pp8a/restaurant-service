@@ -17,7 +17,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import com.restaurant.dao.entity.OrderDetailDAO;
+import com.restaurant.dao.impl.OrderDetailDAO;
 import com.restaurant.entity.OrderDetail;
 import com.restaurant.entity.OrderStatus;
 import com.restaurant.queries.OrderDetailSQLQueries;

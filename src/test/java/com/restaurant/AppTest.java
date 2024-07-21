@@ -49,7 +49,8 @@ class AppTest {
 
         List<ILoggingEvent> logEvents = listAppender.list;
         boolean logFound = logEvents.stream()
-            .anyMatch(event -> event.getLevel() == Level.INFO && event.getFormattedMessage().contains("Welcome to the restaurant service"));
+            .anyMatch(event -> event.getLevel() == Level.INFO && 
+            event.getFormattedMessage().contains("Welcome to the restaurant service"));
 
         assertTrue(logFound, "Expected log message not found");
     }

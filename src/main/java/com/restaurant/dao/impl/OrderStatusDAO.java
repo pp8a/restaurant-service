@@ -1,4 +1,4 @@
-package com.restaurant.dao.entity;
+package com.restaurant.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,22 +17,11 @@ import com.restaurant.queries.OrderStatusSQLQueries;
  * methods to perform CRUD operations and manage OrderStatus data in the database.
  */
 public class OrderStatusDAO extends AbstractDao<OrderStatus, Integer>{		
-	 /**
-     * Constructor with connection parameter for testing.
-     *
-     * @param connection the database connection.
-     */
+	 
 	public OrderStatusDAO(Connection connection) {
 		super(connection);
-	}
+	}	
 	
-	/**
-     * Retrieves an OrderStatus entity by its ID.
-     *
-     * @param statusId the ID of the OrderStatus to retrieve.
-     * @return an Optional containing the found OrderStatus, or an empty Optional if not found.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public Optional<OrderStatus> getById(Integer statusId) throws SQLException {
 		try(PreparedStatement pstmt = connection.prepareStatement(OrderStatusSQLQueries.GET_STATUS_BY_ID)) {
@@ -57,13 +46,7 @@ public class OrderStatusDAO extends AbstractDao<OrderStatus, Integer>{
 	private OrderStatus mapResultSetToOrderStatus(ResultSet rs) throws SQLException {
 		return OrderStatus.valueOf(rs.getString("status_name"));
 	}
-
-	/**
-     * Retrieves all OrderStatus entities from the database.
-     *
-     * @return a list of all OrderStatus entities.
-     * @throws SQLException if a database access error occurs.
-     */
+	
 	@Override
 	public List<OrderStatus> getAll() throws SQLException {
 		List<OrderStatus> orderStatus = new ArrayList<>();
@@ -75,15 +58,8 @@ public class OrderStatusDAO extends AbstractDao<OrderStatus, Integer>{
 			}
 		}		
 		return orderStatus;
-	}
+	}	
 	
-	/**
-	 * Saves an OrderStatus entity.
-	 *
-	 * @param status the OrderStatus entity to save.
-	 * @return the saved OrderStatus entity.
-	 * @throws SQLException if a database access error occurs or if creating the order status fails.
-	 */
 	@Override
 	public OrderStatus save(OrderStatus status) throws SQLException {
 		try(PreparedStatement pstmt = connection.prepareStatement(OrderStatusSQLQueries.INSERT_STATUS)) {
@@ -95,14 +71,8 @@ public class OrderStatusDAO extends AbstractDao<OrderStatus, Integer>{
 	        }
 		}
 		return status;
-	}
+	}	
 	
-	/**
-     * Deletes an OrderStatus entity by its ID.
-     *
-     * @param statusId the ID of the OrderStatus to delete.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public void delete(Integer statusId) throws SQLException {
 		try(PreparedStatement pstmt = connection.prepareStatement(OrderStatusSQLQueries.DELETE_STATUS)) {

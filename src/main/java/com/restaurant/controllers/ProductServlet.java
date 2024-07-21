@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.restaurant.dao.DaoFactory;
-import com.restaurant.dao.entity.ProductDAO;
+import com.restaurant.dao.impl.ProductDAO;
 import com.restaurant.dto.ProductDTO;
 import com.restaurant.entity.Product;
 import com.restaurant.mapper.ProductMapper;

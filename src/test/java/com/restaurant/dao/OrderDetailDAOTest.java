@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.restaurant.dao.entity.OrderDetailDAO;
+import com.restaurant.dao.impl.OrderDetailDAO;
 import com.restaurant.entity.OrderDetail;
 import com.restaurant.entity.OrderStatus;
 import com.restaurant.entity.Product;
@@ -75,7 +75,8 @@ class OrderDetailDAOTest {
      */
     @Test
     void testCreateOrderDetail() throws SQLException {
-        when(mockConnection.prepareStatement(OrderDetailSQLQueries.INSERT_DETAIL, Statement.RETURN_GENERATED_KEYS))
+        when(mockConnection.prepareStatement(OrderDetailSQLQueries.INSERT_DETAIL, 
+        		Statement.RETURN_GENERATED_KEYS))
             .thenReturn(mockPreparedStatement);
 
         OrderDetail orderDetail = createSampleOrderDetail();

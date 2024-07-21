@@ -1,8 +1,8 @@
 package com.restaurant.dao;
 
-import com.restaurant.dao.entity.OrderDetailDAO;
-import com.restaurant.dao.entity.ProductCategoryDAO;
-import com.restaurant.dao.entity.ProductDAO;
+import com.restaurant.dao.impl.OrderDetailDAO;
+import com.restaurant.dao.impl.ProductCategoryDAO;
+import com.restaurant.dao.impl.ProductDAO;
 
 /**
  * Factory class for creating DAO instances.

@@ -1,4 +1,4 @@
-package com.restaurant.dao.entity;
+package com.restaurant.dao.impl;
 
 
 import java.sql.Connection;
@@ -25,31 +25,19 @@ import com.restaurant.queries.ProductSQLQueries;
  */
 public class ProductDAO extends AbstractDao<Product, Integer>{	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductDAO.class);
-	/**
-	 * Default constructor.
-	 */
+	
 	public ProductDAO() {
 		super();
 	}
-	/**
-	 * Constructor with connection parameters for testing.
-	 *
-	 * @param connection the database connection to be used for tests.
-	 */
+	
 	public ProductDAO(Connection connection) {
 		super(connection);
-	}
-		
-	/**
-     * Retrieves a Product entity by its ID.
-     *
-     * @param productId the ID of the Product to retrieve.
-     * @return an Optional containing the found Product, or an empty Optional if not found.
-     * @throws SQLException if a database access error occurs.
-     */
+	}		
+	
 	@Override
 	public Optional<Product> getById(Integer productId) throws SQLException {	
-		try(PreparedStatement pstmt = connection.prepareStatement(ProductSQLQueries.GET_PRODUCT_BY_ID)){
+		try(PreparedStatement pstmt = connection.prepareStatement(
+				ProductSQLQueries.GET_PRODUCT_BY_ID)){
 			pstmt.setInt(1, productId);
 			try(ResultSet rs = pstmt.executeQuery()){
 				if (rs.next()) {			
@@ -81,32 +69,21 @@ public class ProductDAO extends AbstractDao<Product, Integer>{
 		        rs.getBoolean("available"),
 		        category
 		    );
-	}
+	}	
 	
-	/**
-     * Retrieves all Product entities from the database.
-     *
-     * @return a list of all Product entities.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public List<Product> getAll() throws SQLException {
 		List<Product> products = new ArrayList<>();
-		try(PreparedStatement pstmt = connection.prepareStatement(ProductSQLQueries.GET_ALL_PRODUCTS)) {
+		try(PreparedStatement pstmt = connection.prepareStatement(
+				ProductSQLQueries.GET_ALL_PRODUCTS)) {
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
 				products.add(mapResultSetToProduct(rs));
 			}	
 		}
 		return products;
-	}
+	}	
 	
-	/**
-     * Deletes an Product entity by its ID and removes an Product ID from the ORDER_DETAIL_PRODUCTS table.
-     *
-     * @param productId the ID of the Product to delete.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public void delete(Integer productId) throws SQLException {
 		try {
@@ -132,15 +109,8 @@ public class ProductDAO extends AbstractDao<Product, Integer>{
             pstmt.setInt(1, id);
             pstmt.executeUpdate();
         }        
-    }
+    }	
 	
-	/**
-     * Saves a Product entity. If the product exists, it is updated. Otherwise, a new product is created.
-     *
-     * @param product the Product entity to save.
-     * @return the saved Product entity.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public Product save(Product product) throws SQLException {
 		return getById(product.getId()).isPresent() ? updateProduct(product) : createProduct(product);
@@ -154,7 +124,8 @@ public class ProductDAO extends AbstractDao<Product, Integer>{
      * @throws SQLException if a database access error occurs.
      */
 	private Product createProduct(Product product) throws SQLException{
-		PreparedStatement pstmt = connection.prepareStatement(ProductSQLQueries.INSERT_PRODUCT, Statement.RETURN_GENERATED_KEYS);
+		PreparedStatement pstmt = connection.prepareStatement(
+				ProductSQLQueries.INSERT_PRODUCT, Statement.RETURN_GENERATED_KEYS);
 		populatePreparedStatement(product, pstmt);
 		pstmt.executeUpdate();		
 		
@@ -186,7 +157,8 @@ public class ProductDAO extends AbstractDao<Product, Integer>{
      * @throws SQLException if a database access error occurs.
      */
 	private Product updateProduct(Product product) throws SQLException {
-		PreparedStatement pstmt = connection.prepareStatement(ProductSQLQueries.UPDATE_PRODUCT);
+		PreparedStatement pstmt = connection.prepareStatement(
+				ProductSQLQueries.UPDATE_PRODUCT);
 		populatePreparedStatement(product, pstmt);
 		pstmt.setInt(6, product.getId());	
 		pstmt.executeUpdate();

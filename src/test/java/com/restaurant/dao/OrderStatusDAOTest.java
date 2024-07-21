@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.restaurant.dao.entity.OrderStatusDAO;
+import com.restaurant.dao.impl.OrderStatusDAO;
 import com.restaurant.entity.OrderStatus;
 
 /**

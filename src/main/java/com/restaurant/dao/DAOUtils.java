@@ -10,9 +10,7 @@ import com.restaurant.entity.IdentifiableEntity;
  * Utility class providing common DAO-related functions.
  */
 public class DAOUtils {
-	/**
-     * Private constructor to prevent instantiation.
-     */
+	
 	private DAOUtils() {
 		throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
 	}

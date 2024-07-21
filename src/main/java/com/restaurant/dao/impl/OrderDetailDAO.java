@@ -1,4 +1,4 @@
-package com.restaurant.dao.entity;
+package com.restaurant.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,28 +26,15 @@ import com.restaurant.queries.OrderDetailSQLQueries;
  */
 public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderDetailDAO.class);	
-	/**
-	 * Default constructor.
-	 */
+	
 	public OrderDetailDAO() {
 		super();
 	}	
-	/**
-	 * Constructor with connection parameters for testing.
-	 *
-	 * @param connection the database connection to be used for tests.
-	 */
+	
 	public OrderDetailDAO(Connection connection) {
 		super(connection);		
 	}
 
-	/**
-     * Retrieves an OrderDetail entity by its ID.
-     *
-     * @param detailId the ID of the OrderDetail to retrieve.
-     * @return an Optional containing the found OrderDetail, or an empty Optional if not found.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public Optional<OrderDetail> getById(Integer detailId) throws SQLException {
 		try(PreparedStatement pstmt = connection.prepareStatement(OrderDetailSQLQueries.GET_DETAIL_BY_ID)) {
@@ -92,7 +79,8 @@ public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
      */
 	public List<Product> getProductsByOrderDetailId(Integer orderDetailId) throws SQLException {
 	    List<Product> products = new ArrayList<>();
-	    try(PreparedStatement pstmt = connection.prepareStatement(OrderDetailSQLQueries.GET_PRODUCTS_BY_ORDER_DETAIL_ID)) {
+	    try(PreparedStatement pstmt = connection.prepareStatement(
+	    		OrderDetailSQLQueries.GET_PRODUCTS_BY_ORDER_DETAIL_ID)) {
 	    	pstmt.setInt(1, orderDetailId);
 	    	try(ResultSet rs = pstmt.executeQuery()) {
 	    		while (rs.next()) {
@@ -127,12 +115,6 @@ public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
 	    return product;
 	}
 	
-	/**
-     * Retrieves all OrderDetail entities from the database.
-     *
-     * @return a list of all OrderDetail entities.
-     * @throws SQLException if a database access error occurs.
-     */
 	@Override
 	public List<OrderDetail> getAll() throws SQLException {
 		List<OrderDetail> orderDetails = new ArrayList<>();
@@ -145,13 +127,7 @@ public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
 		}
 		return orderDetails;
 	}
-
-	/**
-	 * Deletes an OrderDetail entity from the database by its ID and removes the Product ID from other tables.
-	 *
-	 * @param detailId the ID of the OrderDetail to delete.
-	 * @throws SQLException if a database access error occurs.
-	 */
+	
 	@Override
 	public void delete(Integer detailId) throws SQLException {
 		try {
@@ -178,16 +154,8 @@ public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
             pstmt.setInt(1, id);
             pstmt.executeUpdate();
         }        
-    }
+    }	
 	
-	/**
-	 * Saves an OrderDetail entity to the database. If the entity already exists, it is updated;
-	 * otherwise, it is created.
-	 *
-	 * @param detail the OrderDetail entity to save.
-	 * @return the saved OrderDetail entity.
-	 * @throws SQLException if a database access error occurs.
-	 */
 	@Override
 	public OrderDetail save(OrderDetail detail) throws SQLException {		
 		return getById(detail.getId()).isPresent() ? updateDetail(detail) : createDetail(detail);
@@ -201,7 +169,8 @@ public class OrderDetailDAO extends AbstractDao<OrderDetail, Integer>{
 	 * @throws SQLException if a database access error occurs.
 	 */
 	public OrderDetail createDetail(OrderDetail detail) throws SQLException {
-		PreparedStatement pstmt = connection.prepareStatement(OrderDetailSQLQueries.INSERT_DETAIL, Statement.RETURN_GENERATED_KEYS);
+		PreparedStatement pstmt = connection.prepareStatement(OrderDetailSQLQueries.INSERT_DETAIL, 
+				Statement.RETURN_GENERATED_KEYS);
 		populatePreparedStatement(detail, pstmt);
 		pstmt.executeUpdate();
 		
